@@ -321,7 +321,7 @@
     .portfolio .grid {
       grid-template-columns: 240px 240px;
     }
-    footer{
+    .menu2{
       visibility: hidden;
     }
     }
@@ -349,6 +349,9 @@
       align-content: center;
       justify-content: center;
       height: calc(60vh - 8em - 48px);
+    }
+    .menu2{
+      visibility: hidden;
     }
 
   }
