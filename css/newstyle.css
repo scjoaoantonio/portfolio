@@ -321,8 +321,11 @@
     .portfolio .grid {
       grid-template-columns: 240px 240px;
     }
-    .menu2{
+    .menu2, .redes-sociais2{
       visibility: hidden;
+      display: none;
+      width: 0;
+      height: 0;
     }
     }
       
@@ -350,8 +353,11 @@
       justify-content: center;
       height: calc(60vh - 8em - 48px);
     }
-    .menu2{
+    .menu2, .redes-sociais2{
       visibility: hidden;
+      display: none;
+      width: 0;
+      height: 0;
     }
 
   }
