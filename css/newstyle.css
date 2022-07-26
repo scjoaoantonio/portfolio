@@ -261,6 +261,57 @@
     text-decoration-color: rgb(130, 205, 255);
   }
 
+  @media (min-width: 10px) {
+    .menu{
+      visibility: hidden;
+    }
+    .home{
+      margin-top: 50px;
+    }
+    .sobre{
+      margin-top: 100px;
+    }
+    .works{
+      margin-top: 300px;
+    }
+    .portfolio .grid {
+      grid-template-columns: 150px 150px;
+    }
+    .menu2{
+      width: 100%;
+      height: 60px;
+
+      background-color: #252323;
+      color: whitesmoke;
+
+      position: fixed;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      border-bottom: rgb(130, 205, 255);
+      border-bottom-style: solid;
+    }
+  .menu2 ul{
+      display: flex;
+      margin-left: 35px;
+    }
+  
+  .menu2 li{
+      list-style: none;
+      margin-right: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;    
+    }
+    .redes-sociais2 img{
+      width: 30px;
+      }
+      .works{
+        margin-top: 800px;
+      }
+    }
   @media (min-width: 400px) {
     .menu{
       visibility: hidden;
@@ -305,6 +356,7 @@
       align-items: center;
       justify-content: space-around;    
     }
+
     }
       
   @media (min-width: 600px) {
