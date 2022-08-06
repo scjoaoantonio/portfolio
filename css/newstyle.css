@@ -204,7 +204,7 @@
   }
   
   .lista-icon{
-    width: 55px;
+    max-width: 55px;
   }
   
   /* WORKS.CSS */  
@@ -413,4 +413,3 @@
     }
 
   }
-  
