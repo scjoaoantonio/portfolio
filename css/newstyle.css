@@ -2,414 +2,510 @@
 /* GLOBAL.CSS */
 /* soft reset do css */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  body {
-    background-color: #252323;
-    background-size: auto 100vh; 
-    font-family: 'Source Code Pro', monospace;
-    height: 100vh;
-    font-size: 12px;
-  }
-  
+body {
+  background-color: #252323;
+  background-size: auto 100vh; 
+  font-family: 'Source Code Pro', monospace;
+  height: 100vh;
+  font-size: 12px;
+}
+footer{
+  text-align: end;
+  background-color: #252323;
+  color: rgba(245, 245, 245, 0.404);
+  width: 100%;
+  padding-right: 10px;
+  bottom: 0;
+  position:fixed;
+}
 
-  @media (min-width: 1200px) {
+.sobre h2,
+.contato h2,
+.portfolio h2 {
+  font-family: 'Rubik', sans-serif;
+  color: rgb(163, 218, 255);
+  margin-bottom: 1em;
+  font-size: 2em;
+}
 
-  }
-  
-  .sobre h2,
-  .contato h2,
-  .portfolio h2 {
-    font-family: 'Rubik', sans-serif;
-    color: rgb(163, 218, 255);
-    margin-bottom: 1em;
-    font-size: 2em;
-  }
-  
-  body {
-    background-color: #252323;
-    background-size: auto 100vh; 
-    font-family: 'Source Code Pro', monospace;
-    height: 100vh;
-    font-size: 12px;
-  }
-  .container2{
-    text-align: center;
-  }
-  
+
+.container2{
+  text-align: center;
+}
+
 /* MENU.CSS */
 .logo img{
+  color: whitesmoke;
+  width: 10;
+  float: left;
+}
+.menu{
+    height: 60px;
+    background-color: #252323;
     color: whitesmoke;
-    width: 10;
-    float: left;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border-bottom: rgb(130, 205, 255);
+    border-bottom-style: solid;
+    display: block;
+    z-index: 1;
+    margin: auto;
+    padding: 18px 80px 18px 90px;
   }
-  .menu{
-      height: 60px;
-      background-color: #252323;
-      color: whitesmoke;
-      position: fixed;
-      width: 100%;
-      top: 0;
-      border-bottom: rgb(130, 205, 255);
-      border-bottom-style: solid;
-      display: block;
-      z-index: 1;
-      margin: auto;
-      padding: 18px 80px 18px 90px;
-    }
-  .menu ul{
-      float: right;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      text-align: center;
-    }
-  
-  .menu li{
-      list-style: none;
-      margin-right: 35px;    
-    }
-  .redes-sociais img{
-      width: 26px;
-      
-    }
-  .redes-sociais a{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    }
-  
-  .redes-sociais a{
-    transition: all 0.4s ease-in-out;
-    box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  .redes-sociais a:hover {
-    transform: translateY(-3px);
-    /* box-shadow: 1px 2px 15px rgba(0, 255, 255, 0.4);
-    box-shadow: 1px 2px 10px aqua; */
-  
-  }
-  /* HOME.CSS */
-  .home {
-    height: 100vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
-  }
-  
-  .foto{
-    height: 100%;
-    max-width: auto;
-    border-radius: 20%;
-    box-shadow: 1px 2px 15px rgba(0, 255, 255, 0.2);
-  }
-  .site-title{
-    color: whitesmoke;
-    text-align: center;
-    font-size: 2.5em;
-    font-family: 'Rubik', sans-serif;
-  }
-  
-  .site-subtitle{
-    color:whitesmoke;
-    text-align: center;
-    font-size: 1em;
-    font-family: 'Indie Flower', cursive;
-  } 
-  
-  /* SOBRE.CSS */
-  .sobre{
-    height: 100vh;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 10vh;
-  }
-  
-  .sobre h2{
-    font-family: 'Rubik', sans-serif;
-    color: whitesmoke;
-    margin-bottom: 1.5em;
-    font-size: 50px;
-    text-decoration: underline;
-    text-decoration-color: rgb(130, 205, 255);
-  }
-  
-  .sobre h3{
-    color: whitesmoke;
-    font-size: 1.2em;
+.menu ul{
     float: right;
-    margin: 10px 10px 0 0;
-    position: relative;
-  }
-  
-  .about-container {
     display: flex;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-around;
-    padding-bottom: 4vh;
+    align-items: center;
+    text-align: center;
   }
-  .about-item {
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-  
-    width: 30vh;
-    height: 35vh;
+
+.menu li{
+    list-style: none;
+    margin-right: 35px;    
+  }
+.redes-sociais img{
+    width: 26px;
     
-    margin: 10px 20px 10px 20px;
-  
-    border-radius: 5px;
-    transition: all 0.4s ease-in-out;
-    box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
   }
-  
-  .about-item:hover {
-    cursor: default;
-    transform: translateY(-5px);
-    box-shadow: 1px 4px 15px rgba(0, 255, 255, 0.2);
-  }
-  
-  .about-lista{
+.redes-sociais a{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   text-align: center;
   }
+
+.redes-sociais a{
+  transition: all 0.4s ease-in-out;
+  box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.redes-sociais a:hover {
+  transform: translateY(-3px);
+  /* box-shadow: 1px 2px 15px rgba(0, 255, 255, 0.4);
+  box-shadow: 1px 2px 10px aqua; */
+
+}
+/* HOME.CSS */
+.home {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   
-  .lista{
+}
+
+.foto{
+  height: 100%;
+  max-width: auto;
+  border-radius: 20%;
+}
+.site-title{
+  color: whitesmoke;
+  text-align: center;
+  font-size: 2.5em;
+  font-family: 'Rubik', sans-serif;
+}
+
+.site-subtitle{
+  color:whitesmoke;
+  text-align: center;
+  font-size: 1em;
+  font-family: 'Indie Flower', cursive;
+} 
+
+/* SOBRE.CSS */
+.sobre{
+  height: 100vh;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10vh;
+}
+
+.sobre h2{
+  font-family: 'Rubik', sans-serif;
+  color: whitesmoke;
+  margin-bottom: 1.5em;
+  font-size: 50px;
+  text-decoration: underline;
+  text-decoration-color: rgb(130, 205, 255);
+}
+
+.sobre h3{
+  color: whitesmoke;
+  font-size: 1.2em;
+  float: right;
+  margin: 10px 10px 0 0;
+  position: relative;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 4vh;
+}
+.about-item {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+
+  width: 30vh;
+  height: 35vh;
+  
+  margin: 10px 20px 10px 20px;
+
+  border-radius: 5px;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-item:hover {
+  cursor: default;
+  transform: translateY(-5px);
+  box-shadow: 1px 4px 15px rgba(0, 255, 255, 0.2);
+}
+
+.about-lista{
+text-align: center;
+}
+
+.lista{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sobre li{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  color: whitesmoke;
+  font-size: 15px;
+  align-items: center;
+}
+.sobre ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 30% 5px 5px 5px;
+}
+
+.lista-icon{
+  max-width: 55px;
+}
+
+/* WORKS.CSS */  
+.portfolio .grid {
+  margin-top: 10%;
+    display: grid;
+    gap: 2em;
+  }
+
+  .card-front{
+    text-align: center;
+    height: 180px;
+  }
+  .img-portfolio:hover{
+    transform: scale(1.05);
+    transition: 0.7s;
+    box-shadow: 1px 4px 15px rgba(0, 255, 255, 0.2);
+  }
+
+  .img-portfolio {
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 500ms;
+  }
+  
+.portfolio h2 {
+  font-family: 'Rubik', sans-serif;
+  color: rgb(163, 218, 255);
+  margin-bottom: 1em;
+  font-size: 2em;
+  
+}
+.works{
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-bottom: 3em;
+  
+}
+.works h2{
+  font-family: 'Rubik', sans-serif;
+  color: whitesmoke;
+  margin-bottom: 1.5em;
+  font-size: 50px;
+  text-decoration: underline;
+  text-decoration-color: rgb(130, 205, 255);
+}
+.carde {
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(#333, #333);
+  transition: all .5s;
+}
+.carde .imge {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .8s;
+  z-index: 0;
+  position: relative;
+  opacity: .8;
+}
+
+.carde .contente {
+display: flex;
+  padding: 0px 20px;
+  height: 0;
+  opacity: 0;
+  transition: all .5s;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  transform: translateY(30px);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.carde:hover .contente {
+  height: 60px;
+  padding: 20px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.carde .contente .titlee {
+font-family: 'Rubik', sans-serif;
+color: whitesmoke;
+font-size: 100%;
+font-weight: 600;
+}
+
+#cavalinho {
+background-image: url('../img/others/cavalinho.png');
+background-size: cover;
+background-position: center;
+}
+#canal {
+background-image: url('../img/others/canaljao.png');
+background-size: cover;
+background-position: center;
+}
+#farmacia {
+background-image: url('../img/others/farmacia.png');
+background-size: cover;
+background-position: center;
+}
+#account {
+background-image: url('../img/others/account.jpg');
+background-size: cover;
+background-position: center;
+}
+
+#calculadora {
+background-image: url('../img/others/calc.png');
+background-size: cover;
+background-position: end;
+}  
+#compilador {
+background-image: url('../img/others/compilador.png');
+background-size: cover;
+background-position: center;
+}  
+
+@media (min-width: 10px) {
+  footer{
+    margin-top: 2em;
+    visibility: hidden;
+}
+  .menu{
+    visibility: hidden;
+  }
+  .home{
+    margin-top: 50px;
+  }
+  .sobre{
+    margin-top: 100px;
+  }
+  .works{
+    margin-top: 300px;
+  }
+  .portfolio .grid {
+    grid-template-columns: 150px 150px;
+  }
+  .menu2{
+    width: 100%;
+    height: 60px;
+
+    background-color: #252323;
+    color: whitesmoke;
+
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    border-bottom: rgb(130, 205, 255);
+    border-bottom-style: solid;
   }
-  .sobre li{
+.menu2 ul{
     display: flex;
-    flex-direction: column;
+    margin-left: 35px;
+  }
+
+.menu2 li{
     list-style: none;
-    color: whitesmoke;
-    font-size: 15px;
-    align-items: center;
-  }
-  .sobre ul{
+    margin-right: 35px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    margin: 30% 5px 5px 5px;
+    justify-content: space-around;    
   }
-  
-  .lista-icon{
-    max-width: 55px;
+  .redes-sociais2 img{
+    width: 30px;
+    }
+    .works{
+      margin-top: 800px;
+    }
   }
-  
-  /* WORKS.CSS */  
-  .portfolio .grid {
-      display: grid;
-      gap: 2em;
-    }
-    
-    .flip-card {
-      height: 180px;
-      perspective: 1000px;
-    }
-    
-  
-    .card-front{
-      backface-visibility: hidden;
-      left: 0;
-      position: absolute;
-      top: 0;
-      width: 100%;
-    }
-    
-    .portfolio figure {
-      text-align: center;
-    }
-    
-    .img-portfolio {
-      height: 180px;
-      width: 100%;
-      object-fit: cover;
-      object-position: center;
-      transition: transform 500ms;
-    }
-    
-  .portfolio h2 {
-    font-family: 'Rubik', sans-serif;
-    color: rgb(163, 218, 255);
-    margin-bottom: 1em;
-    font-size: 2em;
+@media (min-width: 400px) {
+  footer{
+    visibility: hidden;
+    margin-top: 2em;
+}
+  .menu{
+    visibility: hidden;
+  }
+  .home{
+    margin-top: 50px;
+  }
+  .sobre{
+    margin-top: 100px;
   }
   .works{
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+    margin-top: 300px;
   }
-  .works h2{
-    font-family: 'Rubik', sans-serif;
+  .portfolio .grid {
+    grid-template-columns: 150px 150px;
+  }
+  .menu2{
+    width: 100%;
+    height: 60px;
+
+    background-color: #252323;
     color: whitesmoke;
-    margin-bottom: 1em;
-    font-size: 50px;
-    text-decoration: underline;
-    text-decoration-color: rgb(130, 205, 255);
+
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: rgb(130, 205, 255);
+    border-bottom-style: solid;
+  }
+.menu2 ul{
+    display: flex;
+    margin-left: 35px;
   }
 
-  @media (min-width: 10px) {
-    .menu{
-      visibility: hidden;
-    }
-    .home{
-      margin-top: 50px;
-    }
-    .sobre{
-      margin-top: 100px;
-    }
-    .works{
-      margin-top: 300px;
-    }
-    .portfolio .grid {
-      grid-template-columns: 150px 150px;
-    }
-    .menu2{
-      width: 100%;
-      height: 60px;
-
-      background-color: #252323;
-      color: whitesmoke;
-
-      position: fixed;
-      top: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      border-bottom: rgb(130, 205, 255);
-      border-bottom-style: solid;
-    }
-  .menu2 ul{
-      display: flex;
-      margin-left: 35px;
-    }
-  
-  .menu2 li{
-      list-style: none;
-      margin-right: 35px;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;    
-    }
-    .redes-sociais2 img{
-      width: 30px;
-      }
-      .works{
-        margin-top: 800px;
-      }
-    }
-  @media (min-width: 400px) {
-    .menu{
-      visibility: hidden;
-    }
-    .home{
-      margin-top: 50px;
-    }
-    .sobre{
-      margin-top: 100px;
-    }
-    .works{
-      margin-top: 300px;
-    }
-    .portfolio .grid {
-      grid-template-columns: 150px 150px;
-    }
-    .menu2{
-      width: 100%;
-      height: 60px;
-
-      background-color: #252323;
-      color: whitesmoke;
-
-      position: fixed;
-      top: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      border-bottom: rgb(130, 205, 255);
-      border-bottom-style: solid;
-    }
-  .menu2 ul{
-      display: flex;
-      margin-left: 35px;
-    }
-  
-  .menu2 li{
-      list-style: none;
-      margin-right: 35px;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;    
-    }
-
-    }
-      
-  @media (min-width: 600px) {
-    .container {
-      background-color: #252323;
-      font-size: 1.3em;
+.menu2 li{
+    list-style: none;
+    margin-right: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
   }
-    .menu{
-      visibility: visible;
-    }
-    .home{
-      margin-top: 45px;
-    }
-    .portfolio .grid {
-      grid-template-columns: 240px 240px;
-    }
-    .menu2, .redes-sociais2{
-      visibility: hidden;
-      display: none;
-      width: 0;
-      height: 0;
-    }
-    }
-      
-  @media (min-width: 1200px) {
-    .container {
-        background-color: #252323;
-        margin-left: auto;
-        margin-right: auto;
-        margin: auto;
-        max-width: 1200px;
-        font-size: 1.5em;
-    }
-    .home{
-      margin-top: 14px;
-    }
-    .sobre{
-      margin-top: 100px;
-    }
-    .works{
-      margin-top: 100px;
-    }
-    .portfolio .grid {
-      grid-template-columns: repeat(3, 260px);
-      align-content: center;
-      justify-content: center;
-      height: calc(60vh - 8em - 48px);
-    }
-    .menu2, .redes-sociais2{
-      visibility: hidden;
-      display: none;
-      width: 0;
-      height: 0;
-    }
 
   }
+    
+@media (min-width: 600px) {
+  footer{
+    visibility: hidden;
+
+    margin-top: 2em;
+}
+  .container {
+    background-color: #252323;
+    font-size: 1.3em;
+}
+  .menu{
+    visibility: visible;
+  }
+  .home{
+    margin-top: 45px;
+  }
+  .portfolio .grid {
+    grid-template-columns: 240px 240px;
+  }
+  .menu2, .redes-sociais2{
+    visibility: hidden;
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  }
+    
+@media (min-width: 1200px) {
+
+footer{
+  visibility: visible;
+}
+  .container {
+      background-color: #252323;
+      margin-left: auto;
+      margin-right: auto;
+      margin: auto;
+      max-width: 1200px;
+      font-size: 1.5em;
+  }
+  .home{
+    margin-top: 14px;
+  }
+  .sobre{
+    margin-top: 100px;
+  }
+  .works{
+    margin-top: 100px;
+  }
+  .portfolio .grid {
+    grid-template-columns: repeat(3, 260px);
+    align-content: center;
+    justify-content: center;
+    height: calc(60vh - 8em - 48px);
+  }
+  .menu2, .redes-sociais2{
+    visibility: hidden;
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+}
