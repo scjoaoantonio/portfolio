@@ -14,16 +14,12 @@
     height: 100vh;
     font-size: 12px;
   }
-  footer{
-    text-align: end;
-    background-color: #252323;
-    color: rgba(245, 245, 245, 0.404);
-    width: 100%;
-    padding-right: 10px;
-    bottom: 0;
-    position:fixed;
-  }
+  
 
+  @media (min-width: 1200px) {
+
+  }
+  
   .sobre h2,
   .contato h2,
   .portfolio h2 {
@@ -33,7 +29,13 @@
     font-size: 2em;
   }
   
-
+  body {
+    background-color: #252323;
+    background-size: auto 100vh; 
+    font-family: 'Source Code Pro', monospace;
+    height: 100vh;
+    font-size: 12px;
+  }
   .container2{
     text-align: center;
   }
@@ -105,6 +107,7 @@
     height: 100%;
     max-width: auto;
     border-radius: 20%;
+    box-shadow: 1px 2px 15px rgba(0, 255, 255, 0.2);
   }
   .site-title{
     color: whitesmoke;
@@ -206,21 +209,28 @@
   
   /* WORKS.CSS */  
   .portfolio .grid {
-    margin-top: 10%;
       display: grid;
       gap: 2em;
     }
+    
+    .flip-card {
+      height: 180px;
+      perspective: 1000px;
+    }
+    
   
     .card-front{
+      backface-visibility: hidden;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+    
+    .portfolio figure {
       text-align: center;
-      height: 180px;
     }
-    .img-portfolio:hover{
-      transform: scale(1.05);
-      transition: 0.7s;
-      box-shadow: 1px 4px 15px rgba(0, 255, 255, 0.2);
-    }
-  
+    
     .img-portfolio {
       height: 180px;
       width: 100%;
@@ -234,117 +244,24 @@
     color: rgb(163, 218, 255);
     margin-bottom: 1em;
     font-size: 2em;
-    
   }
   .works{
     height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    border-bottom: 3em;
     
   }
   .works h2{
     font-family: 'Rubik', sans-serif;
     color: whitesmoke;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
     font-size: 50px;
     text-decoration: underline;
     text-decoration-color: rgb(130, 205, 255);
   }
-  .carde {
-    border-radius: 16px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    cursor: pointer;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-    background-image: linear-gradient(#333, #333);
-    transition: all .5s;
-}
-.carde .imge {
-    width: 100%;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all .8s;
-    z-index: 0;
-    position: relative;
-    opacity: .8;
-}
-
-.carde .contente {
-  display: flex;
-    padding: 0px 20px;
-    height: 0;
-    opacity: 0;
-    transition: all .5s;
-    position: relative;
-    box-sizing: border-box;
-    overflow: hidden;
-    transform: translateY(30px);
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
-.carde:hover .contente {
-    height: 60px;
-    padding: 20px;
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.carde .contente .titlee {
-  font-family: 'Rubik', sans-serif;
-  color: whitesmoke;
-  font-size: 100%;
-  font-weight: 600;
-}
-
-#cavalinho {
-  background-image: url('../img/others/cavalinho.png');
-  background-size: cover;
-  background-position: center;
-}
-#canal {
-  background-image: url('../img/others/canaljao.png');
-  background-size: cover;
-  background-position: center;
-}
-#farmacia {
-  background-image: url('../img/others/farmacia.png');
-  background-size: cover;
-  background-position: center;
-}
-#account {
-  background-image: url('../img/others/account.jpg');
-  background-size: cover;
-  background-position: center;
-}
-
-#calculadora {
-  background-image: url('../img/others/calc.png');
-  background-size: cover;
-  background-position: end;
-}  
-#compilador {
-  background-image: url('../img/others/compilador.png');
-  background-size: cover;
-  background-position: center;
-}  
 
   @media (min-width: 10px) {
-    footer{
-      margin-top: 2em;
-      visibility: hidden;
-  }
     .menu{
       visibility: hidden;
     }
@@ -396,10 +313,6 @@
       }
     }
   @media (min-width: 400px) {
-    footer{
-      visibility: hidden;
-      margin-top: 2em;
-  }
     .menu{
       visibility: hidden;
     }
@@ -447,11 +360,6 @@
     }
       
   @media (min-width: 600px) {
-    footer{
-      visibility: hidden;
-
-      margin-top: 2em;
-  }
     .container {
       background-color: #252323;
       font-size: 1.3em;
@@ -474,10 +382,6 @@
     }
       
   @media (min-width: 1200px) {
-
-  footer{
-    visibility: visible;
-  }
     .container {
         background-color: #252323;
         margin-left: auto;
@@ -509,4 +413,3 @@
     }
 
   }
-
