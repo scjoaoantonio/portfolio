@@ -329,10 +329,10 @@ background-size: cover;
 background-position: center;
 }
 
-#calculadora {
-background-image: url('../img/others/calc.png');
+#joker {
+background-image: url('../img/others/jkrsite.jpeg');
 background-size: cover;
-background-position: end;
+background-position: top;
 }  
 #compilador {
 background-image: url('../img/others/compilador.png');
