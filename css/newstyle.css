@@ -208,7 +208,7 @@ text-align: center;
 .portfolio .grid {
   margin-top: 10%;
     display: grid;
-    gap: 2em;
+    gap: 3em;
   }
 
   .card-front{
@@ -248,10 +248,11 @@ text-align: center;
 .works h2{
   font-family: 'Rubik', sans-serif;
   color: whitesmoke;
-  margin-bottom: 1.5em;
   font-size: 50px;
   text-decoration: underline;
   text-decoration-color: rgb(130, 205, 255);
+  margin-bottom: 200px;
+  margin-top: -100px;
 }
 .carde {
   border-radius: 16px;
@@ -308,38 +309,9 @@ font-size: 100%;
 font-weight: 600;
 }
 
-#cavalinho {
-background-image: url('../img/others/cavalinho.png');
-background-size: cover;
-background-position: center;
+.grid{
+  margin-bottom: 300px;
 }
-#canal {
-background-image: url('../img/others/canaljao.png');
-background-size: cover;
-background-position: center;
-}
-#farmacia {
-background-image: url('../img/others/farmacia.png');
-background-size: cover;
-background-position: center;
-}
-#account {
-background-image: url('../img/others/account.jpg');
-background-size: cover;
-background-position: center;
-}
-
-#joker {
-background-image: url('../img/others/jkrsite.jpeg');
-background-size: cover;
-background-position: top;
-}  
-#compilador {
-background-image: url('../img/others/compilador.png');
-background-size: cover;
-background-position: center;
-}  
-
 @media (min-width: 10px) {
   footer{
     margin-top: 2em;
@@ -494,6 +466,7 @@ footer{
   }
   .works{
     margin-top: 100px;
+      
   }
   .portfolio .grid {
     grid-template-columns: repeat(3, 260px);
@@ -509,3 +482,45 @@ footer{
   }
 
 }
+
+#cavalinho {
+background-image: url('../img/others/cavalinho.png');
+background-size: cover;
+background-position: center;
+}
+#geeking {
+background-image: url('../img/others/geeking.jpg');
+background-size: cover;
+background-position: center;
+}
+#canal {
+background-image: url('../img/others/canaljao.png');
+background-size: cover;
+background-position: center;
+}
+#farmacia {
+background-image: url('../img/others/farmacia.png');
+background-size: cover;
+background-position: center;
+}
+#account {
+background-image: url('../img/others/account.jpg');
+background-size: cover;
+background-position: center;
+}
+
+#joker {
+background-image: url('../img/others/jkrsite.jpeg');
+background-size: cover;
+background-position: top;
+}  
+#compilador {
+background-image: url('../img/others/compilador.png');
+background-size: cover;
+background-position: center;
+}  
+#calculadora {
+background-image: url('../img/others/calc.png');
+background-size: cover;
+background-position: start;
+}  
