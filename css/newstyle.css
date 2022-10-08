@@ -524,6 +524,11 @@ background-image: url('../img/others/ytdownloader.jpg');
 background-size: cover;
 background-position: center;
 }  
+#inventario {
+background-image: url('../img/others/inventario.png');
+background-size: cover;
+background-position: start;
+}  
 #calculadora {
 background-image: url('../img/others/calc.png');
 background-size: cover;
